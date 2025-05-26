@@ -1,9 +1,6 @@
 import math
 
 def is_prime(num):
-    if not isinstance(num, (int, float)) or not float(num).is_integer():
-        return False  # 非整数
-    num = int(num)
     if num < 2:
         return False
     for a in range(2, math.isqrt(num) + 1):
